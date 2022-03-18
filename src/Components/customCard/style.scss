@@ -1,0 +1,26 @@
+@import "../../static/style/theme.scss";
+@import "../../static/style/mixin.scss";
+
+.customCard {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  // background-color: #fff;
+  position: relative;
+  // pointer-events: none;
+
+  @include display_center($direction: column);
+
+  &_content {
+    flex: 1;
+  }
+  &_centain {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
